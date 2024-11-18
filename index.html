@@ -221,11 +221,18 @@
 		</div>
 
 		<div class="contact-form" data-aos="zoom-in">
-			<form action="send_email.php" method = "post">
-				<input type="text" placeholder="Your Name" required>
-				<input type="email" placeholder="Email Address.." required>
-				<textarea name="" id="" cols="30" rows="10" placeholder="Write Message Here.." required>
+			<form action="https://api.web3forms.com/submit" method="POST">
+                
+                 <input type="hidden" name="access_key" value="9330775d-baae-4cef-8052-009059e55b76">
+
+				<input type="text" name="name" placeholder="Your Name" required>
+				<input type="email" name="email" placeholder="Email Address.." required>
+				<textarea name="message" id="" cols="30" rows="10" placeholder
+				="Write Message Here.." required>
 				</textarea>
+
+                 <input type="hidden" name="redirect" value="https://web3forms.com/success">
+
 				<input type="submit" name="" value="Send Message" class="send-btn">
 			</form>
 		</div>
